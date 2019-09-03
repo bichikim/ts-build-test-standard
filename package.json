@@ -14,8 +14,8 @@
     "test:b": "npm run test:browser:unit",
     "test:bw": "npm run test:browser:watch",
     "lint": "eslint \"src/\"",
-    "test:node:unit": "cross-env TS_NODE_PROJECT=tsconfig.node.json mocha \"test/node/**/*.spec.ts\" \"test/both/**/*.spec.ts\"",
-    "test:node:watch": "cross-env TS_NODE_PROJECT=tsconfig.node.json mocha --watch --watch-extensions ts,tsx \"test/node/**/*.spec.ts\" \"test/both/**/*.spec.ts\"",
+    "test:node:unit": "mocha \"test/node/**/*.spec.ts\" \"test/both/**/*.spec.ts\"",
+    "test:node:watch": "mocha --watch --watch-extensions ts,tsx \"test/node/**/*.spec.ts\" \"test/both/**/*.spec.ts\"",
     "test:browser:unit": "karma start config/karma.config.js --browsers=ChromeHeadless --single-run",
     "test:browser:watch": "karma start config/karma.config.js --browsers=ChromeHeadless --auto-watch",
     "preversion": "npm run test && npm run build && npm run build:esm"
