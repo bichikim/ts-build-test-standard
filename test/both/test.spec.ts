@@ -1,6 +1,6 @@
-import testFunction from '@/web'
+import testFunction from '@/both'
 
-describe('browser/test', function test() {
+describe('both/test', function test() {
   it('should be a foo', function test() {
     expect(testFunction()).to.equal('foo')
   })

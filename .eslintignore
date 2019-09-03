@@ -3,5 +3,4 @@ coverage/
 public/*.js
 dist/*.js
 declarations/
-_removed/*.js
 

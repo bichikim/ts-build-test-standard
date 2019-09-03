@@ -1,25 +1,28 @@
 {
-  "name": "mixin-classes",
+  "name": "ts-build-test-standard",
   "version": "0.0.1",
-  "description": "mixin classes",
+  "description": "Typescript Build And Test Standard",
   "main": "dist/amd/index.js",
   "module": "dist/esm/index.js",
   "types": "declarations/index.d.ts",
   "scripts": {
-    "build": "tsc -p tsconfig.amd.json",
-    "build:esm": "tsc -p tsconfig.esm.json",
+    "build:tsc": "tsc -p tsconfig.amd.json",
+    "build:tsc:esm": "tsc -p tsconfig.esm.json",
     "doc": "typedoc -out ./docs ./src --media ./media",
     "test:n": "npm run test:node:unit",
+    "test:nw": "npm run test:node:watch",
     "test:b": "npm run test:browser:unit",
+    "test:bw": "npm run test:browser:watch",
     "lint": "eslint \"src/\"",
-    "test:node:unit": "mocha \"test/**/*.spec.ts\"",
+    "test:node:unit": "cross-env TS_NODE_PROJECT=tsconfig.node.json mocha \"test/node/**/*.spec.ts\" \"test/both/**/*.spec.ts\"",
+    "test:node:watch": "cross-env TS_NODE_PROJECT=tsconfig.node.json mocha --watch --watch-extensions ts,tsx \"test/node/**/*.spec.ts\" \"test/both/**/*.spec.ts\"",
     "test:browser:unit": "karma start config/karma.config.js --browsers=ChromeHeadless --single-run",
     "test:browser:watch": "karma start config/karma.config.js --browsers=ChromeHeadless --auto-watch",
     "preversion": "npm run test && npm run build && npm run build:esm"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bichikim/timeout-asynchronous.git"
+    "url": "git+https://github.com/bichikim/ts-build-test-standard.git"
   },
   "browserslist": [],
   "keywords": [
@@ -31,9 +34,9 @@
   "author": "bichi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bichikim/timeout-asynchronous/issues"
+    "url": "https://github.com/bichikim/ts-build-test-standard/issues"
   },
-  "homepage": "https://github.com/bichikim/timeout-asynchronous#readme",
+  "homepage": "https://github.com/bichikim/ts-build-test-standard#readme",
   "dependencies": {
     "vue": "^2.6.10"
   },
@@ -51,6 +54,7 @@
     "chai": "^4.2.0",
     "codecov": "^3.5.0",
     "core-js": "^3.2.1",
+    "cross-env": "^5.2.1",
     "css-loader": "^3.2.0",
     "eslint": "^5.16.0",
     "eslint-friendly-formatter": "^4.0.1",

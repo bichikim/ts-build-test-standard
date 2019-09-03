@@ -6,7 +6,7 @@ const resolve = (dir) => {
   return path.join(__dirname, '..', dir)
 }
 
-const tsConfigFile = process.env.TS_CONFIG_FILE || 'tsconfig.bundle.json'
+const tsConfigFile = process.env.TS_CONFIG_FILE || 'tsconfig.json'
 const tsTranspileOnly = process.env.TS_TRANSPILE_ONLY === 'true'
 const srcPath = process.env.SRC || 'src'
 // noinspection JSUnusedGlobalSymbols

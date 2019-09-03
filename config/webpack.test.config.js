@@ -23,7 +23,11 @@ module.exports = webpackMerge(WebpackBaseConfig, {
           options: {esModules: true},
         },
         enforce: 'post',
-        exclude: /node_modules|\.spec\.(js|ts)$/,
+        exclude: [
+          /node_modules/,
+          /\.spec\.(js|ts)$/,
+          /config/,
+        ],
       },
     ],
   },
