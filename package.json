@@ -38,7 +38,8 @@
   },
   "homepage": "https://github.com/bichikim/ts-build-test-standard#readme",
   "dependencies": {
-    "vue": "^2.6.10"
+    "vue": "^2.6.10",
+    "vue-tsx-support": "^2.3.2"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",
@@ -50,9 +51,11 @@
     "@types/sinon": "^7.0.13",
     "@typescript-eslint/eslint-plugin": "^1.11.0",
     "@typescript-eslint/parser": "^1.11.0",
+    "@vue/babel-preset-jsx": "^1.1.0",
     "@vue/test-utils": "^1.0.0-beta.29",
     "babel-loader": "^8.0.6",
     "babel-plugin-istanbul": "^5.2.0",
+    "babel-plugin-transform-vue-jsx": "^3.7.0",
     "chai": "^4.2.0",
     "codecov": "^3.5.0",
     "core-js": "^3.2.1",

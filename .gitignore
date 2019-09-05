@@ -29,3 +29,5 @@ package-lock.json
 *.suo
 *.ntvs*
 *.njsproj
+
+.coverage

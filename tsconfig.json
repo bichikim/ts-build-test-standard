@@ -112,6 +112,7 @@
     // build environment
   },
   "include": [
+    "node_modules/vue-tsx-support/enable-check.d.ts",
     "**/*.ts",
     "**/*.tsx",
     "**/*.vue"
