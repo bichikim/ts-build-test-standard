@@ -3,6 +3,7 @@
   "compilerOptions": {
     "module": "es2015",
     "target": "es5",
+    "allowJs": false,
     "outDir": "dist/esm",
     "declaration": true,
     "declarationDir": "declarations"

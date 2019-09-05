@@ -1,23 +1,16 @@
-<template lang="pug">
-  .index
-    span.text {{foo}}
-    img(src="@/assets/empty-avatar.png")
+<template>
+    <span class="text">{{foo}}</span>
 </template>
-
-<style scoped lang="stylus">
-  .index
-    color black
-</style>
 
 <script lang="ts">
   import Vue from 'vue'
 
 
-  export default Vue.extend({
+  export default {
     data() {
       return {
         foo: 'foo',
       }
     },
-  })
+  }
 </script>
