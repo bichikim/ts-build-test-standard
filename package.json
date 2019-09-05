@@ -38,8 +38,7 @@
   },
   "homepage": "https://github.com/bichikim/ts-build-test-standard#readme",
   "dependencies": {
-    "vue": "^2.6.10",
-    "vue-tsx-support": "^2.3.2"
+    "vue": "^2.6.10"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",
@@ -49,8 +48,8 @@
     "@types/lodash": "^4.14.134",
     "@types/mocha": "^5.2.7",
     "@types/sinon": "^7.0.13",
-    "@typescript-eslint/eslint-plugin": "^1.11.0",
-    "@typescript-eslint/parser": "^1.11.0",
+    "@typescript-eslint/eslint-plugin": "^2.1.0",
+    "@typescript-eslint/parser": "^2.1.0",
     "@vue/babel-preset-jsx": "^1.1.0",
     "@vue/test-utils": "^1.0.0-beta.29",
     "babel-loader": "^8.0.6",
@@ -61,10 +60,9 @@
     "core-js": "^3.2.1",
     "cross-env": "^5.2.1",
     "css-loader": "^3.2.0",
-    "eslint": "^5.16.0",
+    "eslint": "^6.3.0",
     "eslint-friendly-formatter": "^4.0.1",
-    "eslint-loader": "^2.0.0",
-    "eslint-plugin-html": "^5.0.5",
+    "eslint-loader": "^3.0.0",
     "eslint-plugin-import": "^2.18.0",
     "eslint-plugin-promise": "^4.1.1",
     "eslint-plugin-vue": "^5.2.2",
