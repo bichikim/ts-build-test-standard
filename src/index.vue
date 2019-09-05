@@ -1,6 +1,6 @@
 <template lang="pug">
   .index
-    span {{foo}}
+    span.text {{foo}}
     img(src="@/assets/empty-avatar.png")
 </template>
 
@@ -16,8 +16,8 @@
   export default Vue.extend({
     data() {
       return {
-        foo: 'foo'
+        foo: 'foo',
       }
-    }
+    },
   })
 </script>
