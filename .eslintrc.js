@@ -274,6 +274,10 @@ module.exports = {
         '[private-methods]',
       ],
       accessorPairPositioning: 'getThenSet',
-    }]
+    }],
+    /***********************************
+     * Vue
+     ***********************************/
+    'vue/mustache-interpolation-spacing': ['error', 'never']
   },
 }
