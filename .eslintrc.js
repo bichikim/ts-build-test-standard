@@ -261,7 +261,7 @@ module.exports = {
         },
       }],
     /***********************************
-     * sort class members
+     * sort class memberss
      ***********************************/
     'sort-class-members/sort-class-members': ['error', {
       order: [
@@ -278,6 +278,8 @@ module.exports = {
     /***********************************
      * Vue
      ***********************************/
-    'vue/mustache-interpolation-spacing': ['error', 'never']
+    'vue/mustache-interpolation-spacing': ['error', 'never'],
+    'vue/component-name-in-template-casing': ['error', 'kebab-case'],
+    'vue/match-component-file-name': ['error']
   },
 }
