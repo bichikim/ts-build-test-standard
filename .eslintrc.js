@@ -229,6 +229,7 @@ module.exports = {
     '@typescript-eslint/member-delimiter-style': 'off',
     // '@typescript-eslint/member-ordering': 'off',
     '@typescript-eslint/no-empty-interface': 'off',
+    '@typescript-eslint/indent': 'off',
     // '@typescript-eslint/no-explicit-any': 'off',
     // '@typescript-eslint/no-type-alias': 'off',
     '@typescript-eslint/camelcase': 'off',

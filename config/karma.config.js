@@ -29,10 +29,20 @@ module.exports = function (config) {
       'test/browser/**/*.js': ['webpack', 'sourcemap'],
       'test/browser/**/*.ts': ['webpack', 'sourcemap'],
     },
+    coverageReporter: {
+      // This is for Webstrom coverage reporter
+      // Karma coverage won't use this
+      dir: '.coverage',
+    },
     coverageIstanbulReporter: {
       reports: ['html', 'lcovonly', 'text-summary'],
       dir: path.join(process.cwd(), '.coverage'),
       fixWebpackSourcePaths: true,
+    },
+    // fix url path
+    proxies: {
+      // fix assets path
+      '/assets/': '/base/src/assets/',
     },
     webpack,
     webpackMiddleware: {

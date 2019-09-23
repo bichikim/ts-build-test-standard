@@ -1,7 +1,6 @@
 const webpackBaseConfig = require('./webpack.base.config')
 const webpackMerge = require('webpack-merge')
 const Webpack = require('webpack')
-const packageJson = require('../package.json')
 module.exports = webpackMerge(webpackBaseConfig({mode: 'bundle'}), {
   /**
    * Test in this project needs development
