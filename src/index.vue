@@ -3,13 +3,20 @@
 </template>
 
 <script lang="ts">
+  import Vue from 'vue'
 
-
-  export default {
-    data() {
-      return {
-        foo: 'foo',
-      }
+  export default Vue.extend<{ name: string },
+    {
+      /* Methods */
     },
-  }
+    {
+      /* Computed */
+    },
+    {
+      /* Props */
+    }>({
+    data() {
+      return {name: 'Jane Doe'}
+    },
+  })
 </script>
