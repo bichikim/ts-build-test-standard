@@ -2,9 +2,8 @@
   "name": "ts-build-test-standard",
   "version": "0.0.1",
   "description": "Typescript Build And Test Standard",
-  "main": "dist/bundle.umd.js",
-  "module": "dist/bundle.esm.js",
-  "types": "declarations/index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "webpack --config config/webpack.config.js",
     "doc": "typedoc -out ./docs ./src --media ./media",
