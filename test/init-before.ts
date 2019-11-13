@@ -1,7 +1,7 @@
-before(async function() {
+before(async function () {
   // empty
 })
 
-after(async function() {
+after(async function () {
   // empty
 })

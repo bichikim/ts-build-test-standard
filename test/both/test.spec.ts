@@ -1,7 +1,7 @@
-import testFunction from '@/both'
+import both from '@/both'
 
-describe('both/test', function test() {
-  it('should be a foo', function test() {
-    expect(testFunction()).to.equal('foo')
+describe('both', function test() {
+  it('should return foo', function test() {
+    expect(both()).to.equal('foo')
   })
 })

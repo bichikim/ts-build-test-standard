@@ -3,10 +3,10 @@ import Vue from 'vue'
 export default Vue.extend({
   data() {
     return {
-      foo: 'foo',
+      name: 'Jane Doe',
     }
   },
   render() {
-    return <div class={{text: true}}>{this.foo}</div>
+    return <div class={{name: true}}>{this.name}</div>
   },
 })
