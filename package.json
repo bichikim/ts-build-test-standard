@@ -14,7 +14,7 @@
     "test:browser": "karma start config/karma.config.js --browsers=ChromeHeadless --single-run",
     "test:browser:watch": "karma start config/karma.config.js --browsers=ChromeHeadless --auto-watch",
     "mocha": "mochapack -r test/mochapack.js --webpack-config config/webpack.mocha.config.js \"test/browser/**/*.spec.ts\"",
-    "preversion": "npm run test && npm run build && npm run build:esm"
+    "preversion": "npm run test && npm run build"
   },
   "repository": {
     "type": "git",
