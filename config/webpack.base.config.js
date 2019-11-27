@@ -1,11 +1,13 @@
 /* tslint:disable:no-require-imports */
-const path = require('path')
 const formatter = require('eslint-friendly-formatter')
+const path = require('path')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
+
 const resolve = (dir) => {
   return path.join(__dirname, '..', dir)
 }
 const _tsTranspileOnly = process.env.TS_TRANSPILE_ONLY === 'true'
+
 module.exports = ({mode = 'bundle', tsTranspileOnly = _tsTranspileOnly} = {}) => {
   const tsConfigFile = process.env.TS_CONFIG_FILE || `tsconfig.${mode}.json`
   return {

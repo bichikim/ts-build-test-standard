@@ -4,8 +4,8 @@
  */
 process.env.NODE_ENV = 'test'
 
-const webpack = require('./webpack.test.config.js')
 const path = require('path')
+const webpack = require('./webpack.test.config.js')
 
 module.exports = function (config) {
   config.set({
