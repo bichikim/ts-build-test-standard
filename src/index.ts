@@ -1,4 +1,4 @@
-import component from 'src/vue.vue'
+import component from './vue.vue'
 export {component}
 
 // for testing entry
