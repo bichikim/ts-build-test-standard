@@ -3,8 +3,10 @@
  * @author Bichi Kim <bichi@live.co.kr>
  */
 process.env.NODE_ENV = 'test'
+
 const webpack = require('./webpack.test.config.js')
 const path = require('path')
+
 module.exports = function (config) {
   config.set({
     basePath: '../',
