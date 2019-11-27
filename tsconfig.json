@@ -46,9 +46,6 @@
     /**********************************
      * Additional Checks              *
      **********************************/
-    "plugins": [
-      { "name": "typescript-tslint-plugin" }
-    ],
     /* Report errors on unused locals. */
     "noUnusedLocals": false,
     /* Report errors on unused parameters. */

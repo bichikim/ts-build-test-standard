@@ -2,7 +2,6 @@
 const path = require('path')
 const formatter = require('eslint-friendly-formatter')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
-const TsconfigPathsWebpackPlugin = require('tsconfig-paths-webpack-plugin')
 const resolve = (dir) => {
   return path.join(__dirname, '..', dir)
 }
@@ -26,11 +25,6 @@ module.exports = ({mode = 'bundle', tsTranspileOnly = _tsTranspileOnly} = {}) =>
         '~~': resolve(''),
         'vue$': 'vue/dist/vue.esm.js',
       },
-      plugins: [
-        new TsconfigPathsWebpackPlugin({
-          configFile: tsConfigFile,
-        }),
-      ],
     },
     plugins: [new VueLoaderPlugin()],
     module: {
