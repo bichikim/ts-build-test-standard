@@ -43,24 +43,9 @@ module.exports = ({mode = 'bundle', tsTranspileOnly = _tsTranspileOnly} = {}) =>
           exclude: /node_modules/,
         },
         {
-          test: /\.jsx?$/,
+          test: /\.(j|t)sx?$/,
           exclude: /node_modules/,
           use: 'babel-loader',
-        },
-        {
-          test: /\.tsx?$/,
-          exclude: [/node_modules/],
-          use: [
-            'babel-loader',
-            {
-              loader: 'ts-loader',
-              options: {
-                appendTsSuffixTo: [/\.vue$/],
-                transpileOnly: tsTranspileOnly,
-                configFile: tsConfigFile,
-              },
-            },
-          ],
         },
         {
           test: /\.css$/,
