@@ -1,3 +1,6 @@
 export default () => {
-  return 'foo'
+  return {
+    location: window.location,
+    foo: 'foo',
+  }
 }

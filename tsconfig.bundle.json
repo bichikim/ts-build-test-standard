@@ -1,9 +1,11 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
+    "emitDeclarationOnly": true,
     "plugins": []
   },
   "include": [
-    "src/**/*.ts"
+    "src/**/*.ts",
+    "node_modules/vue-tsx-support/enable-check.d.ts"
   ]
 }

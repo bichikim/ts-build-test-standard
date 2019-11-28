@@ -1,7 +1,8 @@
-import testFunction from '@/web'
+import web from '@/web'
 
 describe('browser/test', function test() {
   it('should be a foo', function test() {
-    expect(testFunction()).to.equal('foo')
+    const result = web()
+    expect(result.foo).to.equal('foo')
   })
 })
