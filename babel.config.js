@@ -17,7 +17,6 @@ module.exports = {
   ],
   env: {
     test: {
-      // 'presets': ['@vue/babel-preset-jsx'],
       plugins: ['istanbul'],
     },
   },
