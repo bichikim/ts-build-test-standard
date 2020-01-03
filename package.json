@@ -9,8 +9,8 @@
     "build": "parallel-webpack --config config/webpack.config.js && tsc -p tsconfig.bundle.json",
     "doc": "typedoc -out ./docs ./src --media ./media",
     "lint": "eslint \"src/\"",
-    "test": "npm run test:browser && npm run test:mochapack",
-    "test:mocha": "mocha \"test/node/**/*.spec.ts\" \"test/both/**/*.spec.ts\"",
+    "test": "npm run test:browser && npm run test:node",
+    "test:node": "mocha \"test/node/**/*.spec.ts\" \"test/both/**/*.spec.ts\"",
     "test:browser": "karma start config/karma.config.js --browsers=ChromeHeadless --single-run",
     "test:mochapack": "mochapack -r test/mochapack.js --webpack-config config/webpack.mocha.config.js \"test/node/**/*.spec.ts\" \"test/both/**/*.spec.ts\" ",
     "preversion": "npm run test && npm run build"
