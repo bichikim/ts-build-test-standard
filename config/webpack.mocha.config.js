@@ -5,7 +5,6 @@ const nodeExternals = require('webpack-node-externals')
 
 module.exports = webpackMerge(webpackBaseConfig({mode: 'test'}), {
   entry: null,
-  output: null,
   devtool: 'eval',
   /**
    * Test in this project needs development
@@ -22,9 +21,11 @@ module.exports = webpackMerge(webpackBaseConfig({mode: 'test'}), {
   node: {
     dns: 'mock',
     fs: 'empty',
-    path: true,
-    url: false,
+    path: 'empty',
+    url: 'empty',
   },
   target: 'node',
-  externals: [nodeExternals()],
+  externals: [nodeExternals({
+    whitelist: /\.css$/,
+  })],
 })
