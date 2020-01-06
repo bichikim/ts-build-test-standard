@@ -15,6 +15,10 @@ module.exports = {
       },
     ],
   ],
+  plugins: [
+    '@babel/proposal-class-properties',
+    '@babel/plugin-proposal-optional-chaining',
+  ],
   env: {
     test: {
       plugins: ['istanbul'],
