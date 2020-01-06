@@ -42,6 +42,7 @@ module.exports = {
         'no-unused-vars': 'off',
         'no-dupe-class-members': 'off',
         'no-magic-numbers': 'off',
+        'max-len': ['error', 400],
       },
     },
     {
@@ -264,23 +265,24 @@ module.exports = {
     /***********************************
      * sort class memberss
      ***********************************/
-    'sort-class-members/sort-class-members': ['error', {
-      order: [
-        '[static-properties]',
-        '[static-methods]',
-        '[properties]',
-        '[private-properties]',
-        'constructor',
-        '[methods]',
-        '[private-methods]',
-      ],
-      accessorPairPositioning: 'getThenSet',
-    }],
+    'sort-class-members/sort-class-members': [
+      'error', {
+        order: [
+          '[static-properties]',
+          '[static-methods]',
+          '[properties]',
+          '[private-properties]',
+          'constructor',
+          '[methods]',
+          '[private-methods]',
+        ],
+        accessorPairPositioning: 'getThenSet',
+      }],
     /***********************************
      * Vue
      ***********************************/
     'vue/mustache-interpolation-spacing': ['error', 'never'],
     'vue/component-name-in-template-casing': ['error', 'kebab-case'],
-    'vue/match-component-file-name': ['error']
+    'vue/match-component-file-name': ['error'],
   },
 }

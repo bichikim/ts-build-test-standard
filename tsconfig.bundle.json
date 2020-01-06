@@ -2,7 +2,7 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "emitDeclarationOnly": true,
-    "plugins": []
+    "declarationMap": true
   },
   "include": [
     "src/**/*.ts",
