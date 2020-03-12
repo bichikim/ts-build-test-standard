@@ -16,7 +16,8 @@ module.exports = {
     ],
   ],
   plugins: [
-    '@babel/proposal-class-properties',
+    ['@babel/plugin-proposal-decorators', {legacy: true}],
+    ['@babel/proposal-class-properties', {loose: true}],
     '@babel/plugin-proposal-optional-chaining',
   ],
   env: {
